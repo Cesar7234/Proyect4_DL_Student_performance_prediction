@@ -9,8 +9,8 @@ import pandas as pd
 app = FastAPI()
 
 # Cargar el modelo y el preprocesador
-model = load_model('D:/Documentos/Ai Labs/Clases/Sesión 13 cuatro proyectos/Proyecto 4 Regresión DL v2/student_performance_model.h5')
-preprocessor = joblib.load('D:/Documentos/Ai Labs/Clases/Sesión 13 cuatro proyectos/Proyecto 4 Regresión DL v2/preprocessor.joblib')
+model = load_model('student_performance_model.h5')
+preprocessor = joblib.load('preprocessor.joblib')
 
 class StudentFeatures(BaseModel):
     hours_studied: float
