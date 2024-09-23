@@ -10,10 +10,6 @@ COPY requirements.txt .
 # Instala las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia el modelo y el preprocesador
-COPY student_performance_model.h5 .
-COPY preprocessor.joblib .
-
 # Copia el resto de tu código fuente al contenedor
 COPY . .
 
